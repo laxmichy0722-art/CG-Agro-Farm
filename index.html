@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================================================
+       CG-Agro-Farm  |  Single page website
+       Structure : 1) SEO  2) Styles  3) Logo  4) Navbar
+                   5) Hero  6) Content sections  7) Footer
+       ========================================================= -->
+
+  <!-- ============ 1. SEO ============ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14532D">
+
+  <title>CG-Agro-Farm | Rice Mill, Livestock Farm, Furniture &amp; Fish Farm</title>
+  <meta name="description" content="CG-Agro-Farm is a diversified agricultural and manufacturing enterprise in Nepal combining CG Rice Mill, Tharu Vaisi Farm, CG Furniture and CG Fish Farm under one trusted brand. Rice processing, dairy, furniture manufacturing and aquaculture.">
+  <meta name="keywords" content="CG Agro Farm, CG Rice Mill, Tharu Vaisi Farm, CG Furniture, CG Fish Farm, Agriculture Nepal, Rice Mill, Livestock Farm, Buffalo Farming, Dairy, Fish Farm, Aquaculture, Furniture Manufacturing, Agri Business">
+  <meta name="author" content="CG-Agro-Farm">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.cgagrofarm.com/">
+
+  <!-- Open Graph (shown when the site is shared on Facebook / WhatsApp)
+       NOTE: og:image / twitter:image must be a PNG or JPG (1200 x 630 px).
+       SVG images are not supported by social platforms — replace the path below
+       with a real share image, e.g. assets/images/cg-agro-farm-share.jpg -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CG-Agro-Farm">
+  <meta property="og:title" content="CG-Agro-Farm | Growing Agriculture, Building Future">
+  <meta property="og:description" content="Rice processing, livestock farming, furniture production and fish farming — four business divisions, one trusted parent company.">
+  <meta property="og:url" content="https://www.cgagrofarm.com/">
+  <meta property="og:image" content="assets/images/hero-farm.svg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CG-Agro-Farm | Growing Agriculture, Building Future">
+  <meta name="twitter:description" content="A diversified agricultural and manufacturing enterprise: CG Rice Mill, Tharu Vaisi Farm, CG Furniture and CG Fish Farm.">
+  <meta name="twitter:image" content="assets/images/hero-farm.svg">
+
+  <!-- Favicon (uses the same leaf mark as the logo) -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+
+  <!-- Structured data helps Google show rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CG-Agro-Farm",
+    "alternateName": "CG Agro Farm",
+    "slogan": "Growing Agriculture, Building Future",
+    "url": "https://www.cgagrofarm.com/",
+    "logo": "https://www.cgagrofarm.com/assets/logo/logo.svg",
+    "email": "cgagrofarm@gmail.com",
+    "telephone": "+977-9847211161",
+    "description": "Diversified agricultural and manufacturing enterprise with four divisions: CG Rice Mill, Tharu Vaisi Farm, CG Furniture and CG Fish Farm.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[Add Business Address]",
+      "addressLocality": "[Add City]",
+      "addressCountry": "NP"
+    },
+    "department": [
+      { "@type": "Organization", "name": "CG Rice Mill" },
+      { "@type": "Organization", "name": "Tharu Vaisi Farm" },
+      { "@type": "Organization", "name": "CG Furniture" },
+      { "@type": "Organization", "name": "CG Fish Farm" }
+    ]
+  }
+  </script>
+
+  <!-- ============ 2. STYLES ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Skip link: helps keyboard & screen-reader users reach content fast -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- =========================================================
+       3 + 4. LOGO & NAVBAR  (sticky, transparent at top → solid on scroll)
+       To use a real logo image, delete the brand__mark span (the SVG leaf)
+       and use this instead:
+         img class="brand__img" src="assets/logo/logo.svg" alt="CG-Agro-Farm"
+       ========================================================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container" aria-label="Main navigation">
+
+      <!-- Left: logo -->
+      <a class="brand" href="#home" aria-label="CG-Agro-Farm home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img" focusable="false">
+            <defs>
+              <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#4CAF50" />
+                <stop offset="100%" stop-color="#D4A017" />
+              </linearGradient>
+            </defs>
+            <path d="M24 4c9 4 14 11 14 20 0 10-6 17-14 20-8-3-14-10-14-20C10 15 15 8 24 4Z" fill="url(#leafGrad)" />
+            <path d="M24 8v34M24 18l8-6M24 26l-8-6M24 34l9-6" stroke="#14532D" stroke-width="2" stroke-linecap="round" fill="none" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>CG-Agro-Farm</strong>
+          <small>Growing Agriculture, Building Future</small>
+        </span>
+      </a>
+
+      <!-- Right: navigation links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link is-active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#rice-mill" class="nav-link">Rice Mill</a></li>
+        <li><a href="#tharu-vaisi-farm" class="nav-link">Tharu Vaisi Farm</a></li>
+        <li><a href="#furniture" class="nav-link">Furniture</a></li>
+        <li><a href="#fish-farm" class="nav-link">Fish Farm</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+      </ul>
+
+      <!-- Mobile: hamburger button -->
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open main menu">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay" hidden></div>
+
+  <main id="main">
+
+    <!-- =========================================================
+         5. HERO
+         ========================================================= -->
+    <section class="hero" id="home">
+      <!-- Decorative floating leaves (pure CSS animation) -->
+      <div class="hero__particles" aria-hidden="true">
+        <span class="leaf leaf--1">🌾</span>
+        <span class="leaf leaf--2">🌿</span>
+        <span class="leaf leaf--3">🍃</span>
+        <span class="leaf leaf--4">🌾</span>
+        <span class="leaf leaf--5">🍃</span>
+        <span class="leaf leaf--6">🌿</span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="badge">Agriculture • Processing • Manufacturing • Aquaculture</p>
+
+          <h1 class="hero__title">CG-Agro-Farm</h1>
+          <p class="hero__tagline">“Growing Agriculture, Building Future”</p>
+
+          <p class="hero__text">
+            A diversified agricultural and manufacturing enterprise bringing together
+            rice processing, livestock farming, furniture production and fish farming
+            under one trusted brand.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#divisions" class="btn btn--primary btn--lg">Explore Our Businesses</a>
+            <a href="#contact" class="btn btn--ghost btn--lg">Contact Us</a>
+          </div>
+
+          <!-- Quick proof strip: labels only — no invented numbers -->
+          <ul class="hero__points">
+            <li><span aria-hidden="true">✅</span> Local production</li>
+            <li><span aria-hidden="true">✅</span> Quality controlled</li>
+            <li><span aria-hidden="true">✅</span> Professionally managed</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Scroll cue -->
+      <a href="#divisions" class="scroll-cue" aria-label="Scroll to our business divisions">
+        <span aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="trust-strip" aria-label="What CG-Agro-Farm stands for">
+      <div class="container trust-strip__grid">
+        <div class="trust-strip__item"><h2>One Company</h2><p>Four connected business divisions</p></div>
+        <div class="trust-strip__item"><h2>Local First</h2><p>Strengthening regional producers</p></div>
+        <div class="trust-strip__item"><h2>Quality Driven</h2><p>Checked at every production stage</p></div>
+        <div class="trust-strip__item"><h2>Sustainable</h2><p>Practices that protect resources</p></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. OUR BUSINESS DIVISIONS
+         ========================================================= -->
+    <section class="section" id="divisions">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">What We Do</p>
+          <h2 class="section__title">Our Business Divisions</h2>
+          <p class="section__lead">
+            Every division of CG-Agro-Farm runs on the same management system, the same quality
+            standards and the same commitment to customers.
+          </p>
+        </header>
+
+        <div class="division-grid">
+
+          <!-- CARD 1 — CG Rice Mill -->
+          <article class="division-card reveal" data-reveal-delay="1">
+            <div class="division-card__media">
+              <img src="assets/images/div-rice.svg" alt="Illustration of CG Rice Mill paddy fields and processing" loading="lazy" width="600" height="400">
+            </div>
+            <div class="division-card__body">
+              <span class="division-card__icon" aria-hidden="true">🌾</span>
+              <h3 class="division-card__title">CG Rice Mill</h3>
+              <p>Modern rice processing focused on quality, cleanliness and reliable supply.</p>
+              <ul class="tick-list">
+                <li>Rice Processing</li>
+                <li>Rice Packaging</li>
+                <li>Wholesale Supply</li>
+                <li>Local Distribution</li>
+              </ul>
+              <a href="#rice-mill" class="btn btn--outline">Explore Rice Mill</a>
+            </div>
+          </article>
+
+          <!-- CARD 2 — Tharu Vaisi Farm -->
+          <article class="division-card reveal" data-reveal-delay="2">
+            <div class="division-card__media">
+              <img src="assets/images/div-farm.svg" alt="Illustration of Tharu Vaisi Farm with buffaloes and grassland" loading="lazy" width="600" height="400">
+            </div>
+            <div class="division-card__body">
+              <span class="division-card__icon" aria-hidden="true">🐃</span>
+              <h3 class="division-card__title">Tharu Vaisi Farm</h3>
+              <p>Modern livestock farming focused on healthy animals, quality dairy and sustainable farming.</p>
+              <ul class="tick-list">
+                <li>Buffalo Farming</li>
+                <li>Dairy Production</li>
+                <li>Animal Care</li>
+                <li>Organic Farm Practices</li>
+              </ul>
+              <a href="#tharu-vaisi-farm" class="btn btn--outline">Explore Farm</a>
+            </div>
+          </article>
+
+          <!-- CARD 3 — CG Furniture -->
+          <article class="division-card reveal" data-reveal-delay="3">
+            <div class="division-card__media">
+              <img src="assets/images/div-furniture.svg" alt="Illustration of CG Furniture workshop with wooden furniture" loading="lazy" width="600" height="400">
+            </div>
+            <div class="division-card__body">
+              <span class="division-card__icon" aria-hidden="true">🪑</span>
+              <h3 class="division-card__title">CG Furniture</h3>
+              <p>Quality furniture production combining traditional craftsmanship with modern design.</p>
+              <ul class="tick-list">
+                <li>Custom Furniture</li>
+                <li>Office Furniture</li>
+                <li>Home Furniture</li>
+                <li>Commercial Furniture</li>
+              </ul>
+              <a href="#furniture" class="btn btn--outline">Explore Furniture</a>
+            </div>
+          </article>
+
+          <!-- CARD 4 — CG Fish Farm -->
+          <article class="division-card reveal" data-reveal-delay="4">
+            <div class="division-card__media">
+              <img src="assets/images/div-fish.svg" alt="Illustration of CG Fish Farm pond with freshwater fish" loading="lazy" width="600" height="400">
+            </div>
+            <div class="division-card__body">
+              <span class="division-card__icon" aria-hidden="true">🐟</span>
+              <h3 class="division-card__title">CG Fish Farm</h3>
+              <p>Responsible fish farming focused on healthy production and sustainable aquaculture.</p>
+              <ul class="tick-list">
+                <li>Fish Farming</li>
+                <li>Fresh Fish Supply</li>
+                <li>Pond Management</li>
+                <li>Aquaculture</li>
+              </ul>
+              <a href="#fish-farm" class="btn btn--outline">Explore Fish Farm</a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Visual hierarchy: company → divisions → production → management → customers -->
+        <ol class="flow reveal" aria-label="How CG-Agro-Farm works">
+          <li class="flow__step"><span>CG-Agro-Farm</span></li>
+          <li class="flow__arrow" aria-hidden="true">→</li>
+          <li class="flow__step"><span>Business Divisions</span></li>
+          <li class="flow__arrow" aria-hidden="true">→</li>
+          <li class="flow__step"><span>Production</span></li>
+          <li class="flow__arrow" aria-hidden="true">→</li>
+          <li class="flow__step"><span>Management</span></li>
+          <li class="flow__arrow" aria-hidden="true">→</li>
+          <li class="flow__step"><span>Customers</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. ABOUT  (mission / vision / values)
+         ========================================================= -->
+    <section class="section section--cream" id="about">
+      <div class="container about-grid">
+
+        <div class="about-copy reveal">
+          <p class="section__eyebrow">About Us</p>
+          <h2 class="section__title">About CG-Agro-Farm</h2>
+          <p>
+            CG-Agro-Farm is a diversified business organization combining agriculture,
+            food processing, livestock, furniture manufacturing and aquaculture.
+          </p>
+          <p>
+            Instead of running four separate businesses, the company manages every division
+            through one central management system — covering sales, purchases, expenses,
+            inventory, production, staff and daily operations. This keeps quality consistent,
+            costs visible and customers informed across all four divisions.
+          </p>
+
+          <div class="about-copy__stats">
+            <div><strong>04</strong><span>Business Divisions</span></div>
+            <div><strong>01</strong><span>Management System</span></div>
+            <div><strong>Local</strong><span>Production Focus</span></div>
+          </div>
+        </div>
+
+        <div class="about-cards">
+
+          <article class="info-card info-card--mission reveal">
+            <span class="info-card__badge">Our Mission</span>
+            <h3>What we do every day</h3>
+            <ul class="tick-list tick-list--light">
+              <li>Produce quality products</li>
+              <li>Support local agriculture</li>
+              <li>Create employment</li>
+              <li>Use modern technology</li>
+              <li>Maintain sustainable practices</li>
+              <li>Build long-term customer trust</li>
+            </ul>
+          </article>
+
+          <article class="info-card info-card--vision reveal" data-reveal-delay="1">
+            <span class="info-card__badge">Our Vision</span>
+            <h3>Where we are going</h3>
+            <p>
+              “To build a sustainable and trusted business ecosystem connecting
+              agriculture, production and people.”
+            </p>
+          </article>
+
+          <article class="info-card info-card--values reveal" data-reveal-delay="2">
+            <span class="info-card__badge">Our Values</span>
+            <h3>How we work</h3>
+            <ul class="chip-list">
+              <li>Quality</li>
+              <li>Trust</li>
+              <li>Sustainability</li>
+              <li>Transparency</li>
+              <li>Local Support</li>
+              <li>Team Work</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         8. CG RICE MILL
+         ========================================================= -->
+    <section class="section division-detail" id="rice-mill">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Division 01</p>
+          <h2 class="section__title">CG Rice Mill</h2>
+          <p class="section__lead">
+            A complete paddy-to-rice operation — from intake and cleaning to milling, grading,
+            packaging, storage and distribution.
+          </p>
+        </header>
+
+        <div class="capability-grid reveal">
+          <div class="capability"><h3>Rice Processing</h3><p>Controlled milling from raw paddy to finished rice.</p></div>
+          <div class="capability"><h3>Cleaning</h3><p>Removal of dust, stones and foreign material before milling.</p></div>
+          <div class="capability"><h3>Milling</h3><p>Modern milling machinery for consistent grain quality.</p></div>
+          <div class="capability"><h3>Grading</h3><p>Sorting by grain size, colour and broken percentage.</p></div>
+          <div class="capability"><h3>Packaging</h3><p>Clean, clearly labelled packs in practical sizes.</p></div>
+          <div class="capability"><h3>Storage</h3><p>Dry, ventilated storage to protect quality after packing.</p></div>
+          <div class="capability"><h3>Distribution</h3><p>Wholesale supply and local delivery to retailers.</p></div>
+        </div>
+
+        <h3 class="sub-title reveal">Rice Mill Process</h3>
+
+        <!-- Process timeline (arrow = ↓ on small screens via CSS) -->
+        <ol class="timeline reveal" aria-label="Rice mill process steps">
+          <li class="timeline__step"><span class="timeline__num">1</span><h4>Raw Paddy</h4><p>Incoming stock recorded and weighed.</p></li>
+          <li class="timeline__step"><span class="timeline__num">2</span><h4>Cleaning</h4><p>Separators and destoners clean the grain.</p></li>
+          <li class="timeline__step"><span class="timeline__num">3</span><h4>Dehusking</h4><p>Husks and bran are separated from the grain.</p></li>
+          <li class="timeline__step"><span class="timeline__num">4</span><h4>Milling</h4><p>Grain polished to the required grade.</p></li>
+          <li class="timeline__step"><span class="timeline__num">5</span><h4>Grading</h4><p>Rice sorted into quality categories.</p></li>
+          <li class="timeline__step"><span class="timeline__num">6</span><h4>Packaging</h4><p>Weighed, sealed and labelled.</p></li>
+          <li class="timeline__step"><span class="timeline__num">7</span><h4>Distribution</h4><p>Dispatched to wholesale and local buyers.</p></li>
+        </ol>
+
+        <article class="quality-panel reveal">
+          <div class="quality-panel__text">
+            <span class="info-card__badge">Quality Assurance</span>
+            <h3>Checked at every stage</h3>
+            <p>
+              Quality is verified at intake, after cleaning, after milling and before dispatch,
+              so customers receive rice that matches the agreed grade every time.
+            </p>
+            <a href="#sop" class="btn btn--light">View Rice Mill SOP</a>
+          </div>
+          <ul class="quality-panel__list">
+            <li>Moisture &amp; cleanliness check at intake</li>
+            <li>Foreign material removal</li>
+            <li>Broken grain percentage recorded</li>
+            <li>Pack weight verified before sealing</li>
+            <li>Batch numbers written for traceability</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         9. THARU VAISI FARM
+         ========================================================= -->
+    <section class="section section--cream division-detail" id="tharu-vaisi-farm">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Division 02</p>
+          <h2 class="section__title">Tharu Vaisi Farm</h2>
+          <p class="section__lead">
+            A modern livestock farm built around healthy animals, clean surroundings,
+            reliable nutrition and daily production records.
+          </p>
+        </header>
+
+        <div class="feature-grid reveal">
+          <div class="feature"><h3>Buffalo Farming</h3><p>Buffaloes raised for milk production and local supply.</p></div>
+          <div class="feature"><h3>Dairy Production</h3><p>Daily milking routine with recorded yield.</p></div>
+          <div class="feature"><h3>Animal Nutrition</h3><p>Balanced green and dry feed supplied daily.</p></div>
+          <div class="feature"><h3>Veterinary Care</h3><p>Regular health checks and vaccination support.</p></div>
+          <div class="feature"><h3>Clean Farm Environment</h3><p>Sheds and yards kept clean and dry.</p></div>
+          <div class="feature"><h3>Sustainable Livestock</h3><p>Farm waste managed and reused responsibly.</p></div>
+        </div>
+
+        <!-- Statistics: placeholders only — replace XX with real figures -->
+        <div class="stat-grid reveal">
+          <div class="stat-card">
+            <span class="stat-card__icon" aria-hidden="true">🐃</span>
+            <p class="stat-card__value" data-counter="XX" data-suffix="+">XX+</p>
+            <p class="stat-card__label">Healthy Livestock</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__icon" aria-hidden="true">🥛</span>
+            <p class="stat-card__value" data-counter="XX" data-suffix=" L">XX L</p>
+            <p class="stat-card__label">Quality Dairy</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__icon" aria-hidden="true">🏡</span>
+            <p class="stat-card__value" data-counter="XX" data-suffix="%">XX%</p>
+            <p class="stat-card__label">Modern Farm</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__icon" aria-hidden="true">🌱</span>
+            <p class="stat-card__value" data-counter="XX" data-suffix="%">XX%</p>
+            <p class="stat-card__label">Sustainable Practice</p>
+          </div>
+        </div>
+        <p class="note reveal">
+          Note: figures marked <strong>XX</strong> are placeholders. Replace them with verified
+          numbers before publishing.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         10. CG FURNITURE
+         ========================================================= -->
+    <section class="section division-detail" id="furniture">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Division 03</p>
+          <h2 class="section__title">CG Furniture</h2>
+          <p class="section__lead furniture-lead">Designed for Comfort. Built for Life.</p>
+        </header>
+
+        <div class="category-grid reveal">
+          <article class="category-card"><span aria-hidden="true">🛋️</span><h3>Home Furniture</h3><p>Sofas, tables and units for everyday living.</p></article>
+          <article class="category-card"><span aria-hidden="true">💼</span><h3>Office Furniture</h3><p>Desks, chairs and storage for workspaces.</p></article>
+          <article class="category-card"><span aria-hidden="true">🛏️</span><h3>Bedroom Furniture</h3><p>Beds, wardrobes and bedside units.</p></article>
+          <article class="category-card"><span aria-hidden="true">🪑</span><h3>Living Room Furniture</h3><p>Center tables, shelving and display units.</p></article>
+          <article class="category-card"><span aria-hidden="true">🍽️</span><h3>Restaurant Furniture</h3><p>Tables, chairs and counters for food businesses.</p></article>
+          <article class="category-card"><span aria-hidden="true">✂️</span><h3>Custom Furniture</h3><p>Made to your measurements and design.</p></article>
+        </div>
+
+        <div class="feature-grid feature-grid--3 reveal">
+          <div class="feature"><h3>Modern Design</h3><p>Clean lines and practical shapes.</p></div>
+          <div class="feature"><h3>Quality Materials</h3><p>Strong, well-seasoned wood and fittings.</p></div>
+          <div class="feature"><h3>Custom Orders</h3><p>Size, colour and design chosen by you.</p></div>
+          <div class="feature"><h3>Professional Finishing</h3><p>Sanding, polishing and protective finish.</p></div>
+          <div class="feature"><h3>Delivery Support</h3><p>Transport and placement arranged on request.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         11. CG FISH FARM
+         ========================================================= -->
+    <section class="section section--cream division-detail" id="fish-farm">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Division 04</p>
+          <h2 class="section__title">CG Fish Farm</h2>
+          <p class="section__lead">
+            Responsible aquaculture with attention to water quality, feeding discipline and
+            healthy fish growth.
+          </p>
+        </header>
+
+        <div class="feature-grid reveal">
+          <div class="feature"><h3>Fish Breeding</h3><p>Healthy fry selected for stocking.</p></div>
+          <div class="feature"><h3>Pond Management</h3><p>Ponds prepared, limed and maintained.</p></div>
+          <div class="feature"><h3>Fish Feeding</h3><p>Scheduled feed with recorded quantity.</p></div>
+          <div class="feature"><h3>Water Quality Management</h3><p>Regular checking of water and pond bottom.</p></div>
+          <div class="feature"><h3>Fresh Fish Production</h3><p>Harvested and supplied fresh.</p></div>
+          <div class="feature"><h3>Sustainable Aquaculture</h3><p>Pond inputs and waste managed carefully.</p></div>
+        </div>
+
+        <h3 class="sub-title reveal">Fish Farm Process</h3>
+
+        <ol class="timeline timeline--row reveal" aria-label="Fish farm process steps">
+          <li class="timeline__step"><span class="timeline__num">1</span><h4>Pond Preparation</h4></li>
+          <li class="timeline__step"><span class="timeline__num">2</span><h4>Fish Stocking</h4></li>
+          <li class="timeline__step"><span class="timeline__num">3</span><h4>Feeding</h4></li>
+          <li class="timeline__step"><span class="timeline__num">4</span><h4>Growth Monitoring</h4></li>
+          <li class="timeline__step"><span class="timeline__num">5</span><h4>Harvest</h4></li>
+          <li class="timeline__step"><span class="timeline__num">6</span><h4>Fresh Fish Supply</h4></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         12. OUR SERVICES
+         ========================================================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Services</p>
+          <h2 class="section__title">Our Services</h2>
+          <p class="section__lead">
+            All four divisions work together, which lets us serve customers from farm to
+            finished product.
+          </p>
+        </header>
+
+        <div class="service-grid">
+          <article class="service-card reveal"><span class="service-card__icon" aria-hidden="true">🌱</span><h3>Agricultural Production</h3><p>Reliable crop and raw material sourcing.</p></article>
+          <article class="service-card reveal" data-reveal-delay="1"><span class="service-card__icon" aria-hidden="true">🏭</span><h3>Food Processing</h3><p>Paddy cleaning, milling and packaging.</p></article>
+          <article class="service-card reveal" data-reveal-delay="2"><span class="service-card__icon" aria-hidden="true">🐄</span><h3>Livestock Farming</h3><p>Buffalo rearing and animal care.</p></article>
+          <article class="service-card reveal" data-reveal-delay="3"><span class="service-card__icon" aria-hidden="true">🥛</span><h3>Dairy Production</h3><p>Daily milk collection and supply.</p></article>
+          <article class="service-card reveal" data-reveal-delay="4"><span class="service-card__icon" aria-hidden="true">🪑</span><h3>Furniture Manufacturing</h3><p>Home, office and commercial furniture.</p></article>
+          <article class="service-card reveal" data-reveal-delay="5"><span class="service-card__icon" aria-hidden="true">🐟</span><h3>Fish Farming</h3><p>Fresh fish production from managed ponds.</p></article>
+          <article class="service-card reveal" data-reveal-delay="6"><span class="service-card__icon" aria-hidden="true">🚚</span><h3>Wholesale Supply</h3><p>Bulk orders for retailers and traders.</p></article>
+          <article class="service-card reveal" data-reveal-delay="7"><span class="service-card__icon" aria-hidden="true">📦</span><h3>Distribution</h3><p>Local delivery across our service area.</p></article>
+          <article class="service-card reveal" data-reveal-delay="8"><span class="service-card__icon" aria-hidden="true">📝</span><h3>Custom Orders</h3><p>Made-to-requirement products and furniture.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         13. MANAGEMENT SYSTEM  (dashboard cards = DEMO VALUES)
+         ========================================================= -->
+    <section class="section section--dark" id="management-system">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Internal Operations</p>
+          <h2 class="section__title">CG-Agro-Farm Management System</h2>
+          <p class="section__lead">
+            All four divisions are handled through one centralized system, so management can
+            see sales, costs, stock, production and people for the whole company at once.
+          </p>
+          <p class="demo-tag">Demo values — not real company data</p>
+        </header>
+
+        <div class="dashboard">
+          <div class="dashboard__card reveal">
+            <p class="dashboard__label">TOTAL SALES</p>
+            <p class="dashboard__value">Rs. 0</p>
+            <p class="dashboard__hint">Demo value</p>
+          </div>
+          <div class="dashboard__card reveal" data-reveal-delay="1">
+            <p class="dashboard__label">TOTAL EXPENSES</p>
+            <p class="dashboard__value">Rs. 0</p>
+            <p class="dashboard__hint">Demo value</p>
+          </div>
+          <div class="dashboard__card reveal" data-reveal-delay="2">
+            <p class="dashboard__label">TOTAL PURCHASES</p>
+            <p class="dashboard__value">Rs. 0</p>
+            <p class="dashboard__hint">Demo value</p>
+          </div>
+          <div class="dashboard__card reveal" data-reveal-delay="3">
+            <p class="dashboard__label">TOTAL STOCK</p>
+            <p class="dashboard__value">0 Units</p>
+            <p class="dashboard__hint">Demo value</p>
+          </div>
+          <div class="dashboard__card reveal" data-reveal-delay="4">
+            <p class="dashboard__label">TOTAL PRODUCTION</p>
+            <p class="dashboard__value">0 Units</p>
+            <p class="dashboard__hint">Demo value</p>
+          </div>
+          <div class="dashboard__card reveal" data-reveal-delay="5">
+            <p class="dashboard__label">TOTAL CUSTOMERS</p>
+            <p class="dashboard__value">0 Customers</p>
+            <p class="dashboard__hint">Demo value</p>
+          </div>
+          <div class="dashboard__card reveal" data-reveal-delay="6">
+            <p class="dashboard__label">TOTAL SUPPLIERS</p>
+            <p class="dashboard__value">0 Suppliers</p>
+            <p class="dashboard__hint">Demo value</p>
+          </div>
+          <div class="dashboard__card reveal" data-reveal-delay="7">
+            <p class="dashboard__label">TOTAL EMPLOYEES</p>
+            <p class="dashboard__value">0 Employees</p>
+            <p class="dashboard__hint">Demo value</p>
+          </div>
+        </div>
+
+        <p class="note note--dark reveal">
+          These cards show the layout of the system only. Real figures should be loaded from the
+          management database — never typed into the page by hand.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         14. MANAGEMENT MODULES (tabs)
+         ========================================================= -->
+    <section class="section" id="modules">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">System Modules</p>
+          <h2 class="section__title">Management Modules</h2>
+          <p class="section__lead">
+            Six modules cover the daily work of every division. Select a module to see what it
+            manages.
+          </p>
+        </header>
+
+        <div class="tabs reveal">
+          <div class="tabs__list" role="tablist" aria-label="Management modules">
+            <button class="tab is-active" role="tab" id="tab-sales" aria-controls="panel-sales" aria-selected="true" tabindex="0">Sales</button>
+            <button class="tab" role="tab" id="tab-purchase" aria-controls="panel-purchase" aria-selected="false" tabindex="-1">Purchase</button>
+            <button class="tab" role="tab" id="tab-expense" aria-controls="panel-expense" aria-selected="false" tabindex="-1">Expense</button>
+            <button class="tab" role="tab" id="tab-inventory" aria-controls="panel-inventory" aria-selected="false" tabindex="-1">Inventory</button>
+            <button class="tab" role="tab" id="tab-production" aria-controls="panel-production" aria-selected="false" tabindex="-1">Production</button>
+            <button class="tab" role="tab" id="tab-sop" aria-controls="panel-sop" aria-selected="false" tabindex="-1">SOP</button>
+          </div>
+
+          <!-- A. Sales Management -->
+          <div class="tabs__panel" role="tabpanel" id="panel-sales" aria-labelledby="tab-sales" tabindex="0">
+            <h3>A. Sales Management</h3>
+            <ul class="module-list">
+              <li>Sales Entry</li>
+              <li>Invoice</li>
+              <li>Customer</li>
+              <li>Payment</li>
+              <li>Pending Payment</li>
+              <li>Daily Sales</li>
+              <li>Monthly Sales</li>
+            </ul>
+          </div>
+
+          <!-- B. Purchase Management -->
+          <div class="tabs__panel" role="tabpanel" id="panel-purchase" aria-labelledby="tab-purchase" tabindex="0" hidden>
+            <h3>B. Purchase Management</h3>
+            <ul class="module-list">
+              <li>Purchase Entry</li>
+              <li>Supplier</li>
+              <li>Purchase Amount</li>
+              <li>Purchase Return</li>
+              <li>Payment Status</li>
+            </ul>
+          </div>
+
+          <!-- C. Expense Management -->
+          <div class="tabs__panel" role="tabpanel" id="panel-expense" aria-labelledby="tab-expense" tabindex="0" hidden>
+            <h3>C. Expense Management</h3>
+            <ul class="module-list">
+              <li>Farm Expenses</li>
+              <li>Rice Mill Expenses</li>
+              <li>Furniture Expenses</li>
+              <li>Fish Farm Expenses</li>
+              <li>Staff Salary</li>
+              <li>Electricity</li>
+              <li>Transport</li>
+              <li>Maintenance</li>
+              <li>Other Expenses</li>
+            </ul>
+          </div>
+
+          <!-- D. Inventory Management -->
+          <div class="tabs__panel" role="tabpanel" id="panel-inventory" aria-labelledby="tab-inventory" tabindex="0" hidden>
+            <h3>D. Inventory Management</h3>
+            <ul class="module-list">
+              <li>Product</li>
+              <li>Category</li>
+              <li>Opening Stock</li>
+              <li>Purchase</li>
+              <li>Sales</li>
+              <li>Return</li>
+              <li>Closing Stock</li>
+              <li>Unit</li>
+              <li>Reorder Level</li>
+            </ul>
+          </div>
+
+          <!-- E. Production Management -->
+          <div class="tabs__panel" role="tabpanel" id="panel-production" aria-labelledby="tab-production" tabindex="0" hidden>
+            <h3>E. Production Management</h3>
+            <div class="production-grid">
+              <div class="production-card">
+                <h4>Rice Mill</h4>
+                <ul class="module-list module-list--compact">
+                  <li>Paddy Input</li><li>Rice Output</li><li>Broken Rice</li><li>Bran</li><li>Waste</li>
+                </ul>
+              </div>
+              <div class="production-card">
+                <h4>Tharu Vaisi Farm</h4>
+                <ul class="module-list module-list--compact">
+                  <li>Animal Count</li><li>Milk Production</li><li>Feed Consumption</li>
+                </ul>
+              </div>
+              <div class="production-card">
+                <h4>CG Fish Farm</h4>
+                <ul class="module-list module-list--compact">
+                  <li>Fish Stock</li><li>Feed</li><li>Growth</li><li>Mortality</li><li>Harvest</li>
+                </ul>
+              </div>
+              <div class="production-card">
+                <h4>CG Furniture</h4>
+                <ul class="module-list module-list--compact">
+                  <li>Raw Materials</li><li>Production</li><li>Finished Goods</li><li>Orders</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- F. SOP Management (link to the SOP section below) -->
+          <div class="tabs__panel" role="tabpanel" id="panel-sop" aria-labelledby="tab-sop" tabindex="0" hidden>
+            <h3>F. SOP Management</h3>
+            <p>
+              Every division follows a written standard operating procedure, so tasks are done
+              the same way by every team member.
+            </p>
+            <a href="#sop" class="btn btn--primary">Open SOP Section</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         15. SOP  (accordion – no JavaScript needed)
+         ========================================================= -->
+    <section class="section section--cream" id="sop">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Standardisation</p>
+          <h2 class="section__title">Standard Operating Procedures (SOP)</h2>
+          <p class="section__lead">
+            Written step-by-step procedures for each division. Open a card to read the full
+            sequence.
+          </p>
+        </header>
+
+        <div class="sop-grid">
+
+          <details class="sop-card reveal">
+            <summary><span class="sop-card__icon" aria-hidden="true">🌾</span> CG Rice Mill SOP</summary>
+            <ol class="sop-steps">
+              <li>Receive Paddy</li>
+              <li>Check Quality</li>
+              <li>Weigh Paddy</li>
+              <li>Clean Paddy</li>
+              <li>Process / Mill</li>
+              <li>Grade Rice</li>
+              <li>Pack</li>
+              <li>Store</li>
+              <li>Dispatch</li>
+            </ol>
+          </details>
+
+          <details class="sop-card reveal" data-reveal-delay="1">
+            <summary><span class="sop-card__icon" aria-hidden="true">🐃</span> Tharu Vaisi Farm SOP</summary>
+            <ol class="sop-steps">
+              <li>Animal Inspection</li>
+              <li>Feeding</li>
+              <li>Water Supply</li>
+              <li>Cleaning</li>
+              <li>Milking</li>
+              <li>Health Check</li>
+              <li>Record Production</li>
+              <li>Waste Management</li>
+            </ol>
+          </details>
+
+          <details class="sop-card reveal" data-reveal-delay="2">
+            <summary><span class="sop-card__icon" aria-hidden="true">🪑</span> CG Furniture SOP</summary>
+            <ol class="sop-steps">
+              <li>Customer Requirement</li>
+              <li>Design</li>
+              <li>Material Selection</li>
+              <li>Cutting</li>
+              <li>Assembly</li>
+              <li>Sanding</li>
+              <li>Finishing</li>
+              <li>Quality Check</li>
+              <li>Delivery</li>
+            </ol>
+          </details>
+
+          <details class="sop-card reveal" data-reveal-delay="3">
+            <summary><span class="sop-card__icon" aria-hidden="true">🐟</span> CG Fish Farm SOP</summary>
+            <ol class="sop-steps">
+              <li>Pond Preparation</li>
+              <li>Water Quality Check</li>
+              <li>Fish Stocking</li>
+              <li>Feeding</li>
+              <li>Growth Monitoring</li>
+              <li>Health Monitoring</li>
+              <li>Pond Maintenance</li>
+              <li>Harvest</li>
+              <li>Sales / Distribution</li>
+            </ol>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         16. DAILY OPERATIONS  (UI concept)
+         ========================================================= -->
+    <section class="section" id="daily-operations">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Daily Record</p>
+          <h2 class="section__title">Daily Operations</h2>
+          <p class="section__lead">
+            One entry per division per day keeps opening stock, production, sales and cash
+            clear at all times.
+          </p>
+          <p class="demo-tag">Interface concept — values are not saved anywhere</p>
+        </header>
+
+        <form class="ops-form reveal" id="opsForm" novalidate>
+          <div class="ops-form__grid">
+
+            <div class="field">
+              <label for="opsDate">Date</label>
+              <input type="date" id="opsDate" name="opsDate" data-label="Date" required>
+              <p class="field__error" data-error-for="opsDate"></p>
+            </div>
+
+            <div class="field">
+              <label for="opsDivision">Division</label>
+              <select id="opsDivision" name="opsDivision" data-label="Division" required>
+                <option value="">Select division</option>
+                <option>CG Rice Mill</option>
+                <option>Tharu Vaisi Farm</option>
+                <option>CG Furniture</option>
+                <option>CG Fish Farm</option>
+              </select>
+              <p class="field__error" data-error-for="opsDivision"></p>
+            </div>
+
+            <div class="field">
+              <label for="opsOpening">Opening Stock</label>
+              <input type="number" id="opsOpening" name="opsOpening" min="0" step="1" placeholder="0">
+            </div>
+
+            <div class="field">
+              <label for="opsProduction">Production</label>
+              <input type="number" id="opsProduction" name="opsProduction" min="0" step="1" placeholder="0">
+            </div>
+
+            <div class="field">
+              <label for="opsSales">Sales</label>
+              <input type="number" id="opsSales" name="opsSales" min="0" step="1" placeholder="0">
+            </div>
+
+            <div class="field">
+              <label for="opsPurchase">Purchase</label>
+              <input type="number" id="opsPurchase" name="opsPurchase" min="0" step="1" placeholder="0">
+            </div>
+
+            <div class="field">
+              <label for="opsExpenses">Expenses</label>
+              <input type="number" id="opsExpenses" name="opsExpenses" min="0" step="1" placeholder="0">
+            </div>
+
+            <div class="field">
+              <label for="opsClosing">Closing Stock <small>(auto)</small></label>
+              <input type="number" id="opsClosing" name="opsClosing" min="0" step="1" placeholder="0" readonly>
+            </div>
+
+            <div class="field">
+              <label for="opsCash">Cash</label>
+              <input type="number" id="opsCash" name="opsCash" min="0" step="0.01" placeholder="0">
+            </div>
+
+            <div class="field">
+              <label for="opsOnline">Online Payment</label>
+              <input type="number" id="opsOnline" name="opsOnline" min="0" step="0.01" placeholder="0">
+            </div>
+
+            <div class="field">
+              <label for="opsPending">Pending Payment</label>
+              <input type="number" id="opsPending" name="opsPending" min="0" step="0.01" placeholder="0">
+            </div>
+
+            <div class="field field--full">
+              <label for="opsRemarks">Remarks</label>
+              <select id="opsRemarks" name="opsRemarks">
+                <option>Normal Day</option>
+                <option>Stock Adjusted</option>
+                <option>Maintenance Done</option>
+                <option>Bulk Order Day</option>
+                <option>Festival / Special Demand</option>
+              </select>
+            </div>
+
+            <div class="field field--full">
+              <label for="opsNotes">Notes</label>
+              <textarea id="opsNotes" name="opsNotes" rows="3" placeholder="Optional note about today's operations"></textarea>
+            </div>
+
+          </div>
+
+          <div class="ops-form__actions">
+            <button type="submit" class="btn btn--primary">Save Entry (Demo)</button>
+            <button type="reset" class="btn btn--ghost">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         17. GALLERY  (filterable)
+         ========================================================= -->
+    <section class="section section--cream" id="gallery">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Gallery</p>
+          <h2 class="section__title">Our Work</h2>
+          <p class="section__lead">
+            Placeholder images are used so the layout stays intact. Replace the files inside
+            <code>assets/images/</code> with real photographs of the farms, mill and workshop.
+          </p>
+        </header>
+
+        <div class="gallery-filter reveal" role="group" aria-label="Filter gallery by division">
+          <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="rice-mill" aria-pressed="false">Rice Mill</button>
+          <button class="filter-btn" data-filter="farm" aria-pressed="false">Farm</button>
+          <button class="filter-btn" data-filter="furniture" aria-pressed="false">Furniture</button>
+          <button class="filter-btn" data-filter="fish-farm" aria-pressed="false">Fish Farm</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+
+          <figure class="gallery-item reveal" data-category="rice-mill">
+            <img src="assets/images/div-rice.svg" alt="Paddy field with harvested rice, representing CG Rice Mill" loading="lazy">
+            <figcaption><strong>CG Rice Mill</strong><span>Paddy intake and cleaning area</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-category="farm" data-reveal-delay="1">
+            <img src="assets/images/div-farm.svg" alt="Buffaloes grazing at Tharu Vaisi Farm" loading="lazy">
+            <figcaption><strong>Tharu Vaisi Farm</strong><span>Buffalo herd and open grassland</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-category="furniture" data-reveal-delay="2">
+            <img src="assets/images/div-furniture.svg" alt="Wooden furniture inside the CG Furniture workshop" loading="lazy">
+            <figcaption><strong>CG Furniture</strong><span>Finished furniture ready for delivery</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-category="fish-farm" data-reveal-delay="3">
+            <img src="assets/images/div-fish.svg" alt="Fish pond at CG Fish Farm" loading="lazy">
+            <figcaption><strong>CG Fish Farm</strong><span>Managed pond for freshwater fish</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-category="rice-mill">
+            <img src="assets/images/hero-farm.svg" alt="Wide agricultural landscape representing rice fields" loading="lazy">
+            <figcaption><strong>CG Rice Mill</strong><span>Milling and grading process</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-category="farm" data-reveal-delay="1">
+            <img src="assets/images/hero-farm.svg" alt="Green farmland representing Tharu Vaisi Farm" loading="lazy">
+            <figcaption><strong>Tharu Vaisi Farm</strong><span>Daily animal care and milking routine</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-category="furniture" data-reveal-delay="2">
+            <img src="assets/images/div-furniture.svg" alt="Furniture production line at CG Furniture" loading="lazy">
+            <figcaption><strong>CG Furniture</strong><span>Cutting, sanding and finishing</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-category="fish-farm" data-reveal-delay="3">
+            <img src="assets/images/div-fish.svg" alt="Fresh fish supplied by CG Fish Farm" loading="lazy">
+            <figcaption><strong>CG Fish Farm</strong><span>Fresh fish supply and distribution</span></figcaption>
+          </figure>
+
+        </div>
+
+        <p class="gallery-empty" id="galleryEmpty" hidden>No images in this category yet.</p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         18. CONTACT
+         ========================================================= -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info reveal">
+          <p class="section__eyebrow">Contact</p>
+          <h2 class="section__title">Talk to CG-Agro-Farm</h2>
+          <p class="section__lead">
+            Tell us which division you need — rice, dairy, furniture or fish — and we will
+            respond with details.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-list__icon" aria-hidden="true">📍</span>
+              <div><strong>Address</strong><p>[Add Business Address]</p></div>
+            </li>
+            <li>
+              <span class="contact-list__icon" aria-hidden="true">📞</span>
+              <div><strong>Phone</strong><p>[Add Phone Number]</p></div>
+            </li>
+            <li>
+              <span class="contact-list__icon" aria-hidden="true">✉️</span>
+              <div><strong>Email</strong><p>[Add Email Address]</p></div>
+            </li>
+            <li>
+              <span class="contact-list__icon" aria-hidden="true">🕘</span>
+              <div><strong>Opening Hours</strong><p>[Add Business Hours]</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <h3>Send an Inquiry</h3>
+
+          <div class="field">
+            <label for="cName">Name</label>
+            <input type="text" id="cName" name="cName" value="CG Agro Farm" data-label="Name" required minlength="2">
+            <p class="field__error" data-error-for="cName"></p>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="cPhone">Phone</label>
+              <input type="tel" id="cPhone" name="cPhone" value="9847211161" data-label="Phone" required pattern="[0-9+\-\s]{7,20}">
+              <p class="field__error" data-error-for="cPhone"></p>
+            </div>
+
+            <div class="field">
+              <label for="cEmail">Email</label>
+              <input type="email" id="cEmail" name="cEmail" value="cgagrofarm@gmail.com" data-label="Email" required>
+              <p class="field__error" data-error-for="cEmail"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cDivision">Business Division</label>
+            <select id="cDivision" name="cDivision" data-label="Business division" required>
+              <option value="">Select a division</option>
+              <option>CG Rice Mill</option>
+              <option>Tharu Vaisi Farm</option>
+              <option>CG Furniture</option>
+              <option>CG Fish Farm</option>
+              <option>General Inquiry</option>
+            </select>
+            <p class="field__error" data-error-for="cDivision"></p>
+          </div>
+
+          <div class="field">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" name="cMessage" data-label="Message" rows="5" required minlength="10" placeholder="How can we help you?"></textarea>
+            <p class="field__error" data-error-for="cMessage"></p>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block">Send Inquiry</button>
+          <p class="form-note">
+            This form validates your input in the browser only. Connect it to an email service or
+            server before publishing.
+          </p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       19. FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-col footer-col--brand">
+        <a class="brand brand--footer" href="#home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" focusable="false">
+              <path d="M24 4c9 4 14 11 14 20 0 10-6 17-14 20-8-3-14-10-14-20C10 15 15 8 24 4Z" fill="#4CAF50" />
+              <path d="M24 8v34M24 18l8-6M24 26l-8-6M24 34l9-6" stroke="#14532D" stroke-width="2" stroke-linecap="round" fill="none" />
+            </svg>
+          </span>
+          <span class="brand__text"><strong>CG-Agro-Farm</strong><small>Growing Agriculture, Building Future</small></span>
+        </a>
+        <p class="footer-about">
+          A diversified agricultural and manufacturing enterprise: rice processing, livestock
+          farming, furniture production and fish farming under one trusted brand.
+        </p>
+        <ul class="socials">
+          <!-- Replace href="#" + data-placeholder with the real link, e.g.
+               href="https://www.facebook.com/yourpage" -->
+          <li><a href="#" data-placeholder="Facebook URL" aria-label="Facebook (link not added yet)"><span aria-hidden="true">f</span></a></li>
+          <li><a href="#" data-placeholder="Instagram URL" aria-label="Instagram (link not added yet)"><span aria-hidden="true">ig</span></a></li>
+          <li><a href="#" data-placeholder="YouTube URL" aria-label="YouTube (link not added yet)"><span aria-hidden="true">yt</span></a></li>
+          <li><a href="mailto:cgagrofarm@gmail.com" aria-label="Email"><span aria-hidden="true">✉</span></a></li>
+        </ul>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#management-system">Management System</a></li>
+          <li><a href="#sop">SOP</a></li>
+          <li><a href="#daily-operations">Daily Operations</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Business divisions">
+        <h4>Business Divisions</h4>
+        <ul>
+          <li><a href="#rice-mill">CG Rice Mill</a></li>
+          <li><a href="#tharu-vaisi-farm">Tharu Vaisi Farm</a></li>
+          <li><a href="#furniture">CG Furniture</a></li>
+          <li><a href="#fish-farm">CG Fish Farm</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>[Add Business Address]</li>
+          <li>[Add Phone Number]</li>
+          <li>[Add Email Address]</li>
+          <li>[Add Business Hours]</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p>&copy; <span id="currentYear">2026</span> CG-Agro-Farm. All Rights Reserved.</p>
+        <p class="footer-bottom__tag">Growing Agriculture, Building Future</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <!-- Toast / notification area -->
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ============ 20. JAVASCRIPT ============ -->
+  <script src="script.js" defer></script>
+</body>
+</html>
